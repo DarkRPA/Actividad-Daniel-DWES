@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Como crear un repositorio en github</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" href="../../css/estilos.css">
+</head>
+
+<body>
+    <div class="tarjeta min-width-25 max-width-50 max-height-50 overflow-y">
+        <h1>Como crear un repositorio un GitHub</h1>
+        <div class="tarjeta-body">
+            <section>
+                En este tutorial veremos a como inicializar un repositorio con git y a subirlo a GitHub.
+                El proyecto que usaremos será este mismo paquete de actividades así que sin más que decir, comencemos.
+                Asumiremos que ya tenemos Git instalado en nuestro equipo listo para utilizar para no alargar demasiado el tutorial
+                y lo primero que deberemos de hacer será abrir una terminal en el proyecto que vamos a inicializar, yo en mi caso
+                como uso Visual Studio Code utilizo la PowerShell en vez de la terminal pero los resultados deben ser los mismos.
+
+                Primero comprobaremos que definitivamente tenemos instalado git usando <i>git version</i>
+            </section>
+            <img src="../../images/screenshot_33.png" alt="Paso 1.">
+            <section>
+                Luego será el momento de inicializar el repositorio, inicializar el repositorio significa que crearemos un repositorio local para ese
+                proyecto, normalmente esto creará una carpeta .git en nuestro proyecto que no deberemos de modificar a no ser que sepamos que estamos haciendo
+                para inicializar el proyecto usaremos el comando <i>git init</i>
+            </section>
+            <img src="../../images/screenshot_34.png" alt="Paso 2.">
+            <section>
+                En la imagen superior podemos ver como las carpetas y ficheros del explorador del IDE se ponen de un color verde, mostrando que todos son archivos <i>Untracked</i>
+                Para poder trabajar con ellos, primero tendremos que añadirlos al stash, la mayoría de IDEs hacen este proceso automaticamente pero como nosotros
+                lo estamos haciendo manualmente por consola tendremos que usar el comando <i>git add ./</i>
+            </section>
+            <section>
+                Una vez hayamos añadido los archivos al stash podremos realizar un commit, un punto en el tiempo con los cambios de esos ficheros.
+                Para ello usaremos el comando <i>git commit</i>
+            </section>
+            <section>
+                Cuando pongamos el comando se nos abrirá un editor de texto ya sea en una aplicación o en la propia terminal. Deberemos de escribir
+                en la linea superior el mensaje de nuestro commit y guardar el archivo. Cuando lo hayamos guardado volvemos a la terminal y pulsamos CTRL + C
+            </section>
+            <img src="../../images/screenshot_35.png" alt="Paso 3.">
+            <section>
+                Ahora debemos de crear el repositoriode github donde vamos a alojar nuestro código, para ello nos iremos a GitHub -> Repositorios
+                y clickaremos en <i>New Repository</i>
+            </section>
+            <img src="../../images/screenshot_36.png" alt="Paso 4.">
+            <section>
+                Se nos abrirá un formulario en el que tendremos que poner información básica del proyecto, como su nombre y una descripción opcional junto
+                con otras opciones opcionales.
+            </section>
+            <img src="../../images/screenshot_37.png" alt="Paso 5.">
+            <section>
+                Cuando hayamos guardado los cambios se nos abrirá el repositorio que acabamos de crear, tendremos que copiar la URL del repositorio
+                pues es lo que enlazará el repositorio remoto con el local
+            </section>
+            <img src="../../images/screenshot_38.png" alt="Paso 6.">
+            <section>
+                Ahora, volvemos de nuevo a la terminal donde deberemos de enlazar los repositorios, para ello colocamos el comando <i>git remote add git &lt;url&gt;</i>
+                y aunque normalmente no nos pediría loguearnos con otros servidores GitHub si nos obliga por lo que deberemos de loguearnos con nuestro usuario de GitHub
+            </section>
+            <img src="../../images/screenshot_39.png" alt="Paso 7.">
+            <section>
+                Cuando nos hayamos logueado con GitHub veremos que se nos añade el servidor remoto
+            </section>
+            <img src="../../images/screenshot_40.png" alt="Paso 8.">
+            <section>
+                Finalmente para finalizar debemos utilizar el comando <i>git push git master</i> que subira los cambios que han ocurrido en nuestro repositorio
+                local a la rama "master" que se encuentra en el servidor remote que hemos llamado "git"
+            </section>
+            <img src="../../images/screenshot_41.png" alt="Paso 9.">
+        </div>
+    </div>
+</body>
+
+</html>
