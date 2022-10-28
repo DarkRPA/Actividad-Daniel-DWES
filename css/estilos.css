@@ -60,6 +60,7 @@ body{
     display: flex;
     flex-direction: column;
     padding: 2em;
+    box-shadow: 5px 0px 15px #474747 ;
 }
 
 .tarjeta > .tarjeta-body{
@@ -239,4 +240,26 @@ body{
 .overflow-y{
     overflow-y: scroll;
     overflow-x: hidden;
+}
+
+.lista-ordenada-alf{
+    list-style: upper-alpha;
+}
+
+.lista-ordenada-alf li{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.link{  
+    transition: 1s;
+    color: inherit;
+    text-decoration: none;
+    border-bottom: #49A84D 2px solid;
+}
+
+.link:hover{
+    transition: 1s;
+    background-color: #49A84D;
+    color: #E9E9E9;
 }

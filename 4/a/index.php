@@ -11,7 +11,6 @@ if (!empty($_POST)) {
 function analizarYGenerarResultado($eleccion)
 {
     $eleccionMaquina = random_int(1, 5);
-    var_dump($eleccionMaquina);
 
     $mensajeVictoria = "El usuario ganó sacando ".getTipo($eleccion)." y la AI perdió con ".getTipo($eleccionMaquina);
     $mensajePerdida = "La IA ganó sacando ".getTipo($eleccionMaquina)." y el usuario perdió con ".getTipo($eleccion);
