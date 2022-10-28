@@ -1,0 +1,33 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Calculadora de salud</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" href="../../css/estilos.css">
+</head>
+
+<body>
+    <form class="tarjeta min-width-25 max-width-50" action="informe.php" method="get">
+        <h1>Calculadora de salud</h1>
+        <h2>Rellene este formulario y pulse calcular para obtener sus valores sanitarios</h2>
+        <div class="inherit mx-3 gap-1">
+            <div class="flex flex-between flex-rows">
+                <input type="number" required name="edad" placeholder="Edad">
+                <input type="number" required name="peso" placeholder="Peso">
+            </div>
+            <div class="flex flex-between flex-rows">
+                <div>
+                    <span>Sexo</span>
+                    <input type="radio" name="sexo" value="M" id="sexo_m" checked><label for="sexo_m">Hombre</label>
+                    <input type="radio" name="sexo" value="F" id="sexo_f"><label for="sexo_f">Mujer</label>
+                </div>
+                <div>
+                    <input type="number" required name="altura" placeholder="Altura (En cm)">
+                </div>
+            </div>
+            <input type="submit" value="Calcular" class="tarjeta-enviar">
+        </div>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>¿Qué es el control de versiones?</title>
+    <link rel="stylesheet" href="../../css/estilos.css">
+</head>
+
+<body>
+    <div class="flex flex-rows gap-2">
+        <div class="tarjeta min-width-25 max-width-50 max-height-fit">
+            <h1>¿Qué es el control de versiones?</h1>
+            <h3>Aprende que son y por que se usan aplicaciones como <i>GitHub</i> en el mundo moderno</h3>
+            <div class="tarjeta-body">
+                <section>
+                    En la decada de los 70' el internet aún estaba dando sus primeros pasos y en aquel internet
+                    primigenio donde la seguridad
+                    no era una prioridad el vandalismo digital era una realidad. Esta fue una de las razones principales
+                    por la que los primeros
+                    controladores de versiones aparecieron.
+                    Al principio no estaban centrados para ser como lo son hoy en día, sino que estaban creados para
+                    restaurar páginas de wikis
+                    que hubieran sufrido algún tipo de destrozo.
+                </section>
+                <section>
+                    No sería hasta el comienzo de la creación del kernel de <i>Unix</i> que uno de los pilares del
+                    control de versiones apareceria
+                    <i>Git.</i>
+                </section>
+                <section>
+                    Desde este punto el control de versiones fue tomando más relevancia en el mundo del desarrollo por
+                    sus potentes caracteristicas
+                    de no solo restauración de versiones sino compartición de código con programadores open-source de
+                    todo el mundo y la revisión
+                    del código antes de fusionarlo directamente con el código fuente, a base de diferentes operaciones
+                    como un <i>Merge Request</i>
+                </section>
+                <section>
+                    <i>In a Nutshell</i> como se diría en ingles, el control del versiones es una herramienta creada
+                    para que los desarrolladores
+                    puedan tener un control del código que van creando, ofrecerles seguridad y flexibilidad para
+                    compartir o volver a un punto anterior
+                    del código en caso de la existencia de algún problema
+                </section>
+            </div>
+        </div>
+        <div class=" tarjeta min-width-25 max-width-50">
+            <h1>¿Qué diferencia hay entre uno centralizado y uno distribuido?</h1>
+            <div class="tarjeta-body">
+                <section>
+                    A la hora de elegir un controlador de versiones debemos de decidir que arquitectura vamos a utilizar
+                    en nuestro entorno de trabajo
+                    teniendo en cuenta las ventajas y deventajas de ambos.
+                </section>
+                <section>
+                    Cuando hablamos de un gestor centralizado nos referimos a un gestor que utiliza la arquitectura Cliente-Servidor
+                    para sus operaciones, para funcionar únicamente debe haber un servidor central con todos los repositorios
+                    para que el cliente solo tenga que acceder y realizar las operaciones convenientes directamente en el servidor.
+                    Esto es una ventaja por que puede ser accedido por todos los miembros y, usualmente desde todas partes del mundo
+                    si está siendo mostrado al exterior.
+                    También ofrece ligereza ya que el cliente solo debe tener instalado un cliente de git en su equipo y ya está listo
+                    para funcionar
+                </section>
+                <section>
+                    Los sistemas distribuidos tienen usualmente todas las caracteristicas que tienen los sistemas centralizados pero con la diferencia
+                    de que, al contrario que el anterior, estos no requieren de que haya un servidor central que maneje todas las solicitudes lo que abarata
+                    los costes ya que no hay que mantener un servidor pero con el costo de que los clientes tienen que hacer como servidor y cliente en sus propios
+                    equipos.
+                    Cada cliente tiene una copia de los repositorios de la empresa lo que lo hace pesado y dependiendo de la situación, problematico
+                    debido a las discrepancias que pueden ocurrir si hay varios clientes.
+                    También tiene la desventaja de que no es accesible desde internet lo que inhabilita la sincronización de código fuera de la empresa
+                </section>
+                <section>
+                    Al final del día deberemos elegir aquel que se ajuste mejor a nuestras necesidades, teniendo en cuenta las ventajas y desventajas de cada uno
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

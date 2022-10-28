@@ -1,0 +1,132 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Como instalar XAMPP</title>
+    </head>
+    <body>
+        <div>
+            <h1>Tutorial: Como instalar XAMPP</h1>
+            <h3>Aprende a instalar el stack de soluciones XAMPP en este sencillo tutorial</h3>
+        </div>
+        <div>
+            <p>
+                Hoy en día en donde cada vez aparecen más y más tecnológias tener un control de dependencias eficiente
+                puede llegar a ser pesado por lo que para solucionar este problema se inventaron los Stack de soluciones.
+            </p>
+            <p>
+                Paquetes softwares con todos los servicios necesarios para cualquier tipo de proyecto, en este tutorial
+                aprenderemos a instalar el stack de soluciones <b>XAMPP</b> que nos permitira tener un servidor
+                web listo para funcionar en unos pocos sencillos pasos
+            </p>
+        </div>
+        <div>
+            <h2>Paso 1. Requisitos</h2>
+            <p>
+                En el primer paso tendremos que estar seguros de que poseemos una maquina con todos los requisitos siguientes
+                pues en el caso contrario este tutorial podría no funcionar.
+            </p>
+            <ol>
+                <li>
+                    Windows, Linux u cualquier distribución conocida
+                </li>
+                <li>
+                    Un procesador con al menos 1 GHz
+                </li>
+                <li>
+                    512 MB RAM
+                </li>
+                <li>
+                    20 GB de almacenamiento mínimo
+                </li>
+            </ol>
+        </div>
+        <div>
+            <h2>Paso 2. Descarga</h2>
+            <p>
+                Una vez hemos comprobado que cumplimos con todos los requisitos es hora de descargar XAMPP para su posterior
+                instalación. Para ello nos iremos a cualquier buscador de confianza que utilicemos y buscaremos
+                XAMPP, clickaremos en el primer enlace que nos aparezca que sea de Apache Friends.
+            </p>
+            <p>
+                O pulsaremos en este enlace
+                <a href="https://www.apachefriends.org/">Apache Friends</a>
+            </p>
+            <img src="../images/screenshot_8.png" alt="Paso Nº2: Busqueda de XAMPP">
+            <p>
+                Luego, procedemos a clickar en el botón que identifique a nuestro sistema operativo para comenzar la descarga
+            </p>
+            <img src="../images/screenshot_9.png" alt="Paso Nº3: Descargamos la versión de nuestro S.O">
+        </div>
+        <div>
+            <h3>Paso 3. Instalación</h3>
+            <p>Ahora que ya tenemos el ejecutable descargado es hora de instalarlo. Para eso deberemos de encontrar donde se nos ha descargado</p>
+            <p>Y lo ejecutamos, lo primero que veremos será una pantalla de bienvenida en la que, una vez le demos a siguiente veremos una tabla en la que seleccionaremos los servicios que queremos instalar</p>
+            <img src="../images/screenshot_10.png" alt="Paso Nº4: Selección de servicios">
+            <p>Luego, le daremos a siguiente y nos pedirá una ruta de instalación junto con el idioma</p>
+            <img src="../images//screenshot_11.png" alt="Paso Nº5: Ruta de instalación">
+            <img src="../images/screenshot_12.png" alt="Paso Nº6: Idioma">
+            <p>Finalmente se nos informará que todo está listo y podremos comenzar con la instalación</p>
+            <img src="../images/screenshot_13.png" alt="Paso Nº7: Proceso de instalación">
+        </div>
+        <div>
+            <h2>Paso 4. Ejecución</h2>
+            <p>Ahora que ya tenemos XAMPP instalado entonces es momento de ejecutar todos los servicios, para ello podremos buscar en la barra de busqueda de nuestro sistema operativo <i>XAMPP</i> y lo ejecutaremos</p>
+            <img src="../images/screenshot_14.png" alt="Paso Nº8: Panel de control de XAMPP">
+            <p>Iniciaremos únicamente el servidor Apache pues no requerimos de una base de datos ahora mismo</p>
+            <img src="../images/screenshot_15.png" alt="Paso Nº9: Iniciación de Apache">
+            <p>Ahora podremos comprobar que funciona accediendo a <a href="http://localhost">localhost</a> y veremos que realmente funciona</p>
+            <img src="../images/screenshot_16.png" alt="Paso Nº10: Comprobación del funcionamiento del servidor Apache">
+        </div>
+        <div>
+            <h2>Paso 5. Comprobación funcionamiento PHP</h2>
+            <p>
+                Para poder colocar código PHP tendremos que irnos a la carpeta <i>htdocs</i> que se ubica en la siguiente ruta
+                <span>C: -> XAMPP -> htdocs</span> y dentro tendremos que poner nuestros archivos PHP/HTML
+            </p>
+            <p>
+                Cuando vayamos por primera vez veremos que ya hay algunos archivos que son instalados por defecto por XAMPP, los
+                borraremos
+            </p>
+            <img src="../images/screenshot_17.png" alt="Paso Nº11: Eliminado del contenido de la carpeta HTDOCS">
+            <p>
+                Y ahora pondremos dos proyectos de ejemplo, uno se llamara proyecto_1 y el otro proyecto_2
+            </p>
+        </div>
+        <div>
+            <h3>Paso 5.1. Proyecto 1.</h3>
+            <p>
+                Ahora entraremos en proyecto 1 y crearemos un archivo index.php <span>IMPORTANTE: Debemos de tener en cuenta que si no colocamos el .php, no se ejecutará el código PHP que pongamos</span>
+            </p>
+            <img src="../images/screenshot_18.png" alt="Paso Nº12: Creación de index.php">
+            <p>
+                Y ponemos el siguiente código en el fichero
+            </p>
+            <img src="../images/screenshot_19.png" alt="Paso Nº13: Código de fichero index.php">
+            <p>
+                Y luego simplemente iremos a <a href="http://localhost/proyecto_1">proyecto 1</a> y comprobaremos si funciona.
+            </p>
+            <img src="../images/screenshot_20.png" alt="Paso Nº14: Demostración del funcionamiento del proyecto 1">
+        </div>
+        <div>
+            <h3>Paso 5.2. Proyecto 2.</h3>
+            <p>
+                Ahora en el proyecto 2 lo que haremos será un pequeño formulario con dos archivos, un index.html que contendrá el formulario
+                y un procesar.php que será el que procese el contenido. Como es un ejemplo básico, no podremos ningún tipo de comprobación ni validación, solo veremos
+                que está funcionando
+            </p>
+            <img src="../images/screenshot_21.png" alt="Paso Nº15: Creación de los archivos">
+            <p>
+                Ahora metemos el siguiente código en el index.html
+            </p>
+            <img src="../images/screenshot_24.png" alt="Paso Nº16: Código index.html">
+            <p>
+                Y en el archivo procesar.php ponemos que se impriman los datos
+
+            </p>
+            <img src="../images/screenshot_23.png" alt="Paso Nº17: Código procesar.php">
+            <p>
+                Finalmente, comprobamos que está funcionando correctamente
+            </p>
+            <img src="../images/screenshot_26.gif" alt="Paso Nº18: Gif comprobando que funciona correctamente">
+        </div>
+    </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>¿Que es git?</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" href="../../css/estilos.css">
+</head>
+
+<body>
+    <div class="tarjeta min-width-25 max-width-50 max-height-50 overflow-y">
+        <h1>Git vs GitHub. ¿Quién ganará?</h1>
+        <div class="tarjeta-body">
+            <section>
+                Desde hace mucho tiempo se ha debatido que quién ganaría, si Git o GitHub, que cual era la mejor opción
+                cuando la respuesta en si era mucho más facil de lo que creiamos, al final, GitHub es Git al fin y al cabo.
+                Por lo que ninguno gana pues son lo mismo y a la vez. Me explico.
+            </section>
+            <section>
+                Primero debemos de comprender que es Git y su historia, en la etapa temprana del internet apareció un concepto revolucionador para la epoca
+                el software <i>Open-source</i> defendido por Linus Torvalds, desarrollador jefe del kernel del sistema operativo de código abierto
+                más conocido. El kernel de linux. Debido a la dificultad de poner muchos programadores desconocidos a colaborar de forma eficiente
+                sin que ocurrieran conflictos y alto riesgo de sufrir un ataque que pudiera hacerlos retroceder meses en el desarrollo del kernel
+                Linus decidió inventar una herramienta que solucionara todos esos problemas de raiz. En ese momento fue cuando Git por primera vez
+                fue planeado y, posteriormente creado.
+                Un sistema de gestión de versiones que permitia a desarrolladores completamente desconocidos y en continentes diferentes a compartir sus avances en el kernel
+                de linux sin tener que preocuparse por código malicioso gracias a su sistema de <i>Commits</i>.
+            </section>
+            <section>
+                Git tiene un ciclo de vida simple. Para usar git no es necesario tener un servidor central pero si recomendable para compartir el código.
+                Un cliente Git puede inicializar un proyecto con Git para que el software controle los cambios. Cada vez que el usuario haga algún cambio
+                en el proyecto deberá hacer el primer paso en el ciclo de Git, un <i>Commit</i> (En este caso explicamos todo el proceso anterior de <i>Untracked -> Staged</i> sino que partimos directamente desde Commit)
+                Cuando realizamos un commit lo que estamos logrando es hacer una entrada en el repositorio de forma <b>local</b> con los datos que han sido cambiados
+                en el proyecto. Realizando de esta forma una entrada en el tiempo a la que retroceder en caso de que sea necesario.
+            </section>
+            <section>
+                El siguiente paso sería subirlo a un servidor Git para que otros desarrolladores puedan acceder a ese código, para ello se debe pasar
+                por el <i>Push</i> que se encarga de coger todos los commits que se hayan realizado y que no estén sincronizados en la nube
+                y los sube, actualizando en el proceso el código del repositorio remoto.
+            </section>
+            <section>
+                Para que otro desarrollador pueda percatarse de los cambios debe de realizar cada X tiempo un <i>Fetch</i> para actualizar
+                el repositorio local y un <i>Pull</i> para poder obtener los cambios en el entorno de trabajo.
+                Usualmente los IDEs vienen con una opción que realiza estas dos operaciones automaticamente.
+            </section>
+            <section>
+                Entonces, ¿Que es GitHub?. Bueno, GitHub es un servidor Git, por eso internamente Git y GitHub son lo mismo únicamente que GitHub
+                no actua como cliente Git sino como servidor y repositorio remoto.
+                Hay muchos otros servidores Git como por ejemplo Gitea, Gitlab e incluso clientes de desarrollo en la nube como GitHub Workspaces
+                o Gitpod.
+            </section>
+            <section>
+                Git se encarga de todo el ciclo de vida del cliente mientras que github se encarga del ciclo de vida del servidor y con el añadido
+                que gracias a su fama es el servidor git más conocido del mundo por lo que tanto la seguridad como la distribución del código es mucho
+                más fiable con GitHub que con otros servidores aparte que también incluye otras funciones no estandares de git como lo son los plugins
+                que ayudan a tener un flujo de trabajo personalizado en tu repositorio
+            </section>
+            <section>
+                Con esto ya explicado podemos ver a Git como el cliente que se encarga de todo lo relacionado con lo local
+                mientras que a GitHub como el servidor que maneja los repositorios remotos de los desarrolladores
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>

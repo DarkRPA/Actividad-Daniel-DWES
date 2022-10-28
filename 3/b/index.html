@@ -1,0 +1,64 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Formulario datos</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" href="../../css/estilos.css">
+</head>
+
+<body>
+    <form class="tarjeta min-width-25" action="./cv.php" method="post">
+        <h2>Generador de CV</h2>
+        <h4>Rellene los campos y pulse Generar para tener su CV</h4>
+        <div class="tarjeta-body">
+            <input type="text" name="nombre" placeholder="Nombre y apellidos" required>
+            <input type="number" name="edad" placeholder="Edad" required>
+            <input type="number" name="telefono" placeholder="Número teléfonico (Opcional)">
+            <input type="text" name="imagen" placeholder="URL De tu imagen" required>
+            <input type="text" name="web" placeholder="Sitio web personal (Opcional)">
+            <label for="estudios">Estudios cursados:</label>
+            <select name="estudios" id="estudios" class="select">
+                <option value="0" selected>
+                    Sin estudios
+                </option>
+                <option value="1">
+                    Primaria
+                </option>
+                <option value="2">
+                    Secundaria
+                </option>
+                <option value="3">
+                    F.P.G.M
+                </option>
+                <option value="4">
+                    Bachillerato
+                </option>
+                <option value="5">
+                    F.P.G.S
+                </option>
+                <option value="6">
+                    Título universitario
+                </option>
+            </select>
+            <label for="dominio-idioma">Idiomas dominados:</label>
+            <div id="dominio-idioma" class="checkbox-list flex flex-rows flex-around">
+                <div class="flex flex-cols">
+                    <span><input type="checkbox" name="idiomas[]" id="" value="ingles">Ingles</span>
+                    <span><input type="checkbox" name="idiomas[]" id="" value="frances">Frances</span>
+                    <span><input type="checkbox" name="idiomas[]" id="" value="español">Español</span>
+                    <span><input type="checkbox" name="idiomas[]" id="" value="italiano">Italiano</span>
+                </div>
+                <div class="flex flex-cols">
+                    <span><input type="checkbox" name="idiomas[]" id="" value="aleman">Alemán</span>
+                    <span><input type="checkbox" name="idiomas[]" id="" value="ruso">Ruso</span>
+                    <span><input type="checkbox" name="idiomas[]" id="" value="chino">Chino</span>
+                    <span><input type="checkbox" name="idiomas[]" id="" value="japones">Japónes</span>
+                </div>
+            </div>
+            <textarea name="formacion" id="" cols="30" rows="10" placeholder="Experiencia laboral"></textarea>
+        </div>
+        <input class="tarjeta-enviar" type="submit" value="Enviar" required>
+    </form>
+</body>
+
+</html>

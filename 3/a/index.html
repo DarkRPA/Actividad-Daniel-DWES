@@ -1,0 +1,21 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Formulario datos</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <link rel="stylesheet" href="../../css/estilos.css">
+    </head>
+    <body>
+        <form class="tarjeta min-width-25" action="./usuario.php" method="post">
+            <h2>Formulario sencillo</h2>
+            <h4>Rellene los campos y pulse Enviar</h4>
+            <div class="tarjeta-body">
+                <input type="text" name="nombre" placeholder="Nombre y apellidos" required>    
+                <input type="email" name="email" placeholder="Correo electrónico" required>
+                <input type="number" name="telefono" placeholder="Número teléfonico (Opcional)">
+                <input type="text" name="web" placeholder="Sitio web personal (Opcional)">
+                <textarea name="consulta" cols="30" rows="10" placeholder="Escriba su consulta aquí." required></textarea>
+            </div>
+            <input class="tarjeta-enviar" type="submit" value="Enviar">
+        </form>
+    </body>
+</html>
